@@ -2,12 +2,12 @@
 This repository contains code and instructions for performing association rule filtering on a species occurrence dataset using R.
 ## Table of Contents
 
-- [Introduction]](#Introduction)
+- [Introduction](#Introduction)
 - [Prerequisites](#Prerequisites)
-- [Installation](Installation)
-- [Data Preparation](#Data Preparation)
-- [Association Rule Filtering](#Association Rule Filtering)
-- [Output](Output)
+- [Installation](#Installation)
+- [Data Preparation](#DataPreration)
+- [Association Rule Filtering](#AssociationRuleFiltering)
+- [Output](#Output)
 
 
 ## Introduction
@@ -31,7 +31,7 @@ To use this code, follow these steps:
 1.	Clone this repository to your local machine or download the ZIP file and extract it.
 2.	Open the R environment or RStudio.
 3.	Set the working directory to the location where you cloned or extracted the repository.
-4.	Install the required R packages by running the following command in the R console:
+4.	Install the required R packages by running the following command in the R console: For e.g.
 
 |install.packages(c("arules", "arulesViz"))|
 | :- |
@@ -42,6 +42,29 @@ Before performing association rule filtering, you need to prepare your species o
 1.	Species Occurrence Dataset: Prepare your species occurrence dataset in CSV format. The dataset should have columns representing species and occurrence locations. Each row should correspond to a single occurrence record.
 2.	Taxonomic Dataset: Prepare your taxonomic dataset in CSV format. The dataset should contain information about the taxonomic hierarchy of the species in your occurrence dataset. It should include columns such as Species ID, Kingdom, Phylum, Class, Order, Family, Genus, and Species.
 Note: The taxonomic dataset should cover all the species present in your occurrence dataset.
+
+ The two datasets used in this analysis are given in the supplementary material (Please refer to the article):
+ 1. 34 number of Mangrove occurrence data at 19 identified regions in India 
+ 2. Taxonomic details of those 34 Mangroves 
+
+
+_Sample input dataset of Indian Mangrove occurrence data_
+The first two rows are given among a total of 19 rows:
+[Each row corresponds to an estuarine region and contains the list of species found in that region long the columns]
+| Region number |  Species 1    | Species 2  | Species 3 | Species 4 | Species 5 | Species 6|Species 7|
+| ------------- | ------------- |------------|-----------|-----------|-----------|----------|-----------|
+| 1  | _Brownlowia tersa_  |  _Kandelia candel_  |_Scyphiphora hydrophyllacea_|_Xylocarpus granatum_|_Phoenix paludosa_|_Nypa fruticans_|
+| 2 |_Avicennia marina_|	_Rhizophora apiculata_ |	_Rhizophorata mucronata_ |             
+
+
+
+_Sample input dataset of taxonomic details of Indian Mangrove_
+The first two rows are given among a total of 34 rows:
+|Mangrove|	Genus	|Family|	Order|	Superorder|	Class	|
+|--------|--------|------|-------|------------|-------|
+|_Acanthus ilicifolius_| Linnaeus|	Acanthus|	Acanthaceae	|Lamiales|	Asteranae| 	Magnoliopsida|
+|_Avicennia alba Blume_|	Avicennia|	Acanthaceae|	Lamiales|	Asteranae |	Magnoliopsida|
+
 
 ## Association Rule Filtering
 
@@ -63,7 +86,7 @@ Each row corresponds to an estuary and contains the list of species found
 
   Output
 The script will generate the following output:
-•	Filtered Association Rules: The script will display the filtered association rules .
+•	Filtered Association Rules: The script will display the filtered association rules.
 
 #### Step 2: 
 1.	Open the statistical_validation_rule_filtering.R  file in your preferred R environment.
