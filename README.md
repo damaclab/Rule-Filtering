@@ -43,19 +43,24 @@ Before performing association rule filtering, you need to prepare your species o
 2.	Taxonomic Dataset: Prepare your taxonomic dataset in CSV format. The dataset should contain information about the taxonomic hierarchy of the species in your occurrence dataset. It should include columns such as Species ID, Kingdom, Phylum, Class, Order, Family, Genus, and Species.
 Note: The taxonomic dataset should cover all the species present in your occurrence dataset.
 
- The two datasets used in this analysis are given in the supplementary material (Please refer to the article):
- 1. 34 number of Mangrove occurrence data at 19 identified regions in India 
- 2. Taxonomic details of those 34 Mangroves 
+ The two datasets used in this analysis are given in the supplementary material (Please refer to the Table 11 and Table 13)
+ The Dataset Description is given below: 
 
+|Description| Dimension| Rows| Columns| 
+|-----------|-------|--------|--------|
+|Indian mangroves occurrence data| 34 x 19| 34 Indian mangroves | 19 estuaries along the east and west coasts|
+|Taxonomic details for the mangroves in India |34 x 7| 34 Indian mangroves | Unique identifier (WoRMS ID or ITIS TSN or GBIF taxon id ), and taxonomic hierarchy|
+
+
+Note: Input datasets require minimum alteration for feeding to the R-environment:
 
 _Sample input dataset of Indian Mangrove occurrence data_
 The first two rows are given among a total of 19 rows:
 [Each row corresponds to an estuarine region and contains the list of species found in that region long the columns]
-| Region number |  Species 1    | Species 2  | Species 3 | Species 4 | Species 5 | Species 6|Species 7|
-| ------------- | ------------- |------------|-----------|-----------|-----------|----------|-----------|
+| Region number |  Species 1    | Species 2  | Species 3 | Species 4 | Species 5 | Species 6|
+| ------------- | ------------- |------------|-----------|-----------|-----------|----------|
 | 1  | _Brownlowia tersa_  |  _Kandelia candel_  |_Scyphiphora hydrophyllacea_|_Xylocarpus granatum_|_Phoenix paludosa_|_Nypa fruticans_|
 | 2 |_Avicennia marina_|	_Rhizophora apiculata_ |	_Rhizophorata mucronata_ |             
-
 
 
 _Sample input dataset of taxonomic details of Indian Mangrove_
@@ -64,6 +69,8 @@ The first two rows are given among a total of 34 rows:
 |--------|--------|------|-------|------------|-------|
 |_Acanthus ilicifolius_| Linnaeus|	Acanthus|	Acanthaceae	|Lamiales|	Asteranae| 	Magnoliopsida|
 |_Avicennia alba Blume_|	Avicennia|	Acanthaceae|	Lamiales|	Asteranae |	Magnoliopsida|
+
+
 
 
 ## Association Rule Filtering
