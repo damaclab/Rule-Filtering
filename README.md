@@ -8,6 +8,7 @@ This repository contains code and instructions for performing association rule f
 - [Data Preparation](#DataPreration)
 - [Association Rule Filtering](#AssociationRuleFiltering)
 - [Output](#Output)
+- [References](#References)
 
 
 ## Introduction
@@ -54,7 +55,8 @@ Note: The taxonomic dataset should cover all the species present in your occurre
 
 Note: Input datasets require minimum alteration for feeding to the R-environment:
 
-_Sample input dataset of Indian Mangrove occurrence data_
+_Sample input dataset of Indian Mangrove occurrence data: EstuaryVsSpecies.CSV_
+
 The first two rows are given among a total of 19 rows:
 [Each row corresponds to an estuarine region and contains the list of species found in that region long the columns]
 | Region number |  Species 1    | Species 2  | Species 3 | Species 4 | Species 5 | Species 6|
@@ -63,7 +65,7 @@ The first two rows are given among a total of 19 rows:
 | 2 |_Avicennia marina_|	_Rhizophora apiculata_ |	_Rhizophorata mucronata_ |             
 
 
-_Sample input dataset of taxonomic details of Indian Mangrove_
+_Sample input dataset of taxonomic details of Indian Mangrove: taxonomy_details.csv_
 The first two rows are given among a total of 34 rows:
 |Mangrove|	Genus	|Family|	Order|	Superorder|	Class	|
 |--------|--------|------|-------|------------|-------|
@@ -93,6 +95,7 @@ Each row corresponds to an estuary and contains the list of species found
 
   Output
 The script will generate the following output:
+
 •	Filtered Association Rules: The script will display the filtered association rules.
 
 #### Step 2: 
@@ -104,25 +107,37 @@ The script will generate the following output:
 
 Output
 The script will generate the following output:
-•	Statistically validated set of association rules for after Bonferroni and Benjamini Hochberg correction.
+
+•	Statistically validated set of association rules after Bonferroni and Benjamini Hochberg correction.
 
 #### Step 3: 
 
 1.	Open the subjective_measure_rule_filtering.R  file in your preferred R environment.
 2.	Input dataset: taxonomy_details.csv;
 3.	Run the script in your R environment.
-4.	The script will generate taxonomic distinctness between two individuals and stored in 
+4.	The script will generate taxonomic distinctness between two individuals using R function _taxa2dist() from R package (vegan: Community Ecology Package)_ and stored in 
 taxdis.csv
 
-5.	In the later phase the script will generate the overall taxonomic distance for each rule. Provided that we have taxdis.csv  and the list of statistically significant rules.
+5.	In the later phase the script will generate the total taxonomic distinctness for each rule. Provided that we have taxdis.csv  and the list of statistically significant rules.
 
 
 Output: 
 
 The script will generate the following output:
+
 •	Final set of ecologically significant frequent species associations
 
 
+## References
 
+[1] Oksanen, J., Blanchet, F. G., Kindt, R., Legendre, P., Minchin, P. R., O’hara, R. B., ... & Oksanen, M. J. (2013). Package ‘vegan’. Community ecology package, version, 2(9), 1-295.
+
+[2]Hahsler, M., Buchta, C., Gruen, B., Hornik, K., & Hahsler, M. M. (2022). Package ‘arules’.
+
+[3]Tollefson, M., & Tollefson, M. (2021). Graphics with the ggplot2 Package: An Introduction. Visualizing Data in R 4: Graphics Using the base, graphics, stats, and ggplot2 Packages, 281-293.
+
+[4] Hahsler, M. (2017). arulesViz: Interactive visualization of association rules with R. R J., 9(2), 163.
+
+[5] De, K., Singh, A. P., Sarkar, A., Singh, K., Siliwal, M., Uniyal, V. P., and Hussain, S. A. (2023). Relationship between species richness, taxonomic distinctness, functional diversity, and local contribution to β diversity and effects of habitat disturbance in the riparian spider community of the Ganga river, India. Ecological Processes, 12(1):1–13
 
 
