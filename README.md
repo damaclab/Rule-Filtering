@@ -7,7 +7,6 @@ This repository contains code and instructions for performing association rule f
 - [Installation](#Installation)
 - [Data Preparation](#DataPreration)
 - [Association Rule Filtering](#AssociationRuleFiltering)
-- [Output](#Output)
 - [References](#References)
 
 
@@ -123,9 +122,23 @@ taxdis.csv
 
 Output: 
 
-The script will generate the following output:
+Sample output for the generated taxonomic distinctness between any two species:
+ |Species|_Acanthus ilicifolius_|_Avicennia alba_|_Avicennia marina_|_Avicennia officinalis_|_Nypa fruticans_|
+|------------|-----------------|--------------|--------------------|-----------------------|------------------|
+|_Acanthus ilicifolius_|0 |	     
+|_Avicennia alba_|21|0|
+|_Avicennia marina_|21|17|0|
+|_Avicennia officinalis_|21|17|17|0|
+|_Nypa fruticans_|73|73|73|73|0|
 
-•	Final set of ecologically significant frequent species associations
+ Sample output for the total taxonomic distinctness for frequently occurred species associations:
+ 
+_Aegialitis rotundifolia , Kandelia candel_  = 73
+
+ _Aegialitis rotundifolia ,  Heritiera fomes_ = 73
+ 
+_Aegialitis rotundifolia, Kandelia candel, Heritiera fomes_ = 219
+ 
 
 
 ## References
