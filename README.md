@@ -78,47 +78,33 @@ The first two rows are given among a total of 34 rows:
 
 To perform association rule filtering on your species occurrence, follow these steps:
 
-#### Step1:
-1.	Open the objective_measure_rule_filtering.R  file in your preferred R environment.
-2.	Input dataset: EstuaryVsSpecies.CSV 
+#### Step1: Filtering by objective measures and statistical validation
 Each row corresponds to an estuary and contains the list of species found
-3.	Modify the code to specify the file paths to your species occurrence and taxonomic datasets. Include the name of the focal species to be studied. Update any other parameters or settings according to your requirements.
+1.	Open the objective_measure.R  file in your preferred R environment.
+2.		Input dataset: EstuaryVsSpecies.CSV 
+3.	Modify the code to specify the input file path. Include the name of the focal species to be studied. Update any other parameters or settings according to your requirements.
 4.	Run the script in your R environment.
-5.	The script will read the species occurrence and taxonomic datasets, preprocess the data, generate association rules, and perform filtering based on the specified parameters.
+5.	The script will read the species occurrence datasets, preprocess the data, generate association rules, and perform filtering based on the specified parameters.
 
 6.	The filtered association rules will be displayed in the R console, showing the antecedent (left-hand side), consequent (right-hand side), support, confidence, and other relevant metrics for each rule.
 
 7.	The script generates visualization for the filtered association rules to gain insights into the co-occurrence patterns and taxonomic relationships of different species in your datasets.
 
+8. This script also includes statistical validation applying Bonferroni correction and Benjamini Hochberg adjustment for each rule.
 
 
   Output
 The script will generate the following output:
+• The script will display a statistically validated set of association rules.
 
-•	Filtered Association Rules: The script will display the filtered association rules.
 
-#### Step 2: 
-1.	Open the statistical_validation_rule_filtering.R  file in your preferred R environment.
-2.	Input dataset: The generated output set after rule filtering by objective measures.
+#### Step 2: Filtering by subjective measures
+
+1.	Open the subjective_measure.R  file in your preferred R environment.
+2.	Input dataset: mangrove_taxonomy.csv;
 3.	Run the script in your R environment.
-4.	The script will read each rule and apply Bonferroni correction and Benjamini Hochberg adjustment for each rule.
-
-
-Output
-The script will generate the following output:
-
-•	Statistically validated set of association rules after Bonferroni and Benjamini Hochberg correction.
-
-#### Step 3: 
-
-1.	Open the subjective_measure_rule_filtering.R  file in your preferred R environment.
-2.	Input dataset: taxonomy_details.csv;
-3.	Run the script in your R environment.
-4.	The script will generate taxonomic distinctness between two individuals using R function _taxa2dist() from R package (vegan: Community Ecology Package)_ and stored in 
-taxdis.csv
-
-5.	In the later phase the script will generate the total taxonomic distinctness for each rule. Provided that we have taxdis.csv  and the list of statistically significant rules.
-
+4.	The script will generate taxonomic distinctness between two individuals using R function _taxa2dist() from R package (vegan: Community Ecology Package)_ and stored in  taxdis.csv.
+5.	Finally, the total _taxonomic_distinctness.py file generates the total taxonomic distinctness for each rule, provided that we have taxdis.csv (taxdis.csv is generated from subjective_measure.R) and Heritiera_fomes_filtered.csv (Heritiera_fomes_filtered.csv is generated from objective_measure.R). 
 
 Output: 
 
