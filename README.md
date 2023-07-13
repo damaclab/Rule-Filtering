@@ -23,7 +23,12 @@ By following these instructions, you will be able to identify meaningful associa
 
 Before using this code, ensure that you have the following prerequisites installed:
 •	R: You can download and install R from the official website: https://www.r-project.org/
+
 •	RStudio: RStudio is an integrated development environment (IDE) for R. It provides a user-friendly interface and additional tools for R programming. You can download and install RStudio from the official website: https://www.rstudio.com/
+
+•	Jupyter notebook: Jupyter notebook is an open-source IDE that supports Python. 
+To install it from Anaconda distribution, visit the Anaconda website (https://www.anaconda.com/products/individual) and download the Anaconda distribution appropriate for your operating system (Windows, macOS, or Linux). Then install Jupyter notebook.
+
 
 ## Installation
 
