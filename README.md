@@ -127,6 +127,8 @@ Sample output for the total taxonomic distinctness for frequently occurred speci
 _Aegialitis rotundifolia, Kandelia candel, Heritiera fomes_ = 219 
 
 
+**The sample output files for Heritiera fomes are attached in the folder named sample output.**
+
 ## References
 
 [1] Oksanen, J., Blanchet, F. G., Kindt, R., Legendre, P., Minchin, P. R., O’hara, R. B., ... & Oksanen, M. J. (2013). Package ‘vegan’. Community ecology package, version, 2(9), 1-295.
