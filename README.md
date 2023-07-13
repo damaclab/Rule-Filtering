@@ -64,7 +64,7 @@ The first two rows are given among a total of 19 rows:
 | 2 |_Avicennia marina_|	_Rhizophora apiculata_ |	_Rhizophorata mucronata_ |             
 
 
-_Sample input dataset of taxonomic details of Indian Mangrove: taxonomy_details.csv_
+_Sample input dataset of taxonomic details of Indian Mangrove: mangrove_taxonomy.csv_
 The first two rows are given among a total of 34 rows:
 |Mangrove|	Genus	|Family|	Order|	Superorder|	Class	|
 |--------|--------|------|-------|------------|-------|
