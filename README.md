@@ -50,14 +50,6 @@ Each entry is containing region number and the respective species found at that 
  It should includes columns such as Species ID, Kingdom, Phylum, Class, Order, Family, Genus, and Species.
 Note: The taxonomic dataset covers all the species present in the occurrence dataset.
 
- The Dataset Description is given below: 
-
-|Description| Dimension| Rows| Columns| 
-|-----------|-------|--------|--------|
-|Indian mangroves occurrence data| 34 x 19| 34 Indian mangroves | 19 estuaries along the east and west coasts|
-|Taxonomic details for the mangroves in India |34 x 7| 34 Indian mangroves | Unique identifier (WoRMS ID or ITIS TSN or GBIF taxon id ), and taxonomic hierarchy|
-
-Note: Input datasets require minimum alteration for feeding to the R-environment:
 
 _Sample input dataset of Indian Mangrove occurrence data: EstuaryVsSpecies.CSV_
 
