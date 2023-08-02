@@ -94,8 +94,8 @@ The script will generate the following output:
 
 #### Step 2: Filtering by subjective measures
 
-1.	Open the subjective_measure.R  file in your preferred R environment.
-2.**Input dataset: mangrove_taxonomy.csv**
+1.	Open the subjective_measure.R file in preferred R environment.
+2.  **Input dataset: mangrove_taxonomy.csv**
 3.	Run the script in R environment.
 4.	The script will generate taxonomic distinctness between two individuals using R function _taxa2dist() from R package (vegan: Community Ecology Package)_ and stored in  **taxdis.csv**.
 6.	Finally, the **total_taxonomic_distinctness.py** file generates the total taxonomic distinctness for each rule, provided that we have taxdis.csv (taxdis.csv is generated from subjective_measure.R) and Heritiera_fomes_filtered.csv (Heritiera_fomes_filtered.csv is generated from objective_measure.R). 
