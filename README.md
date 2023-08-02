@@ -127,9 +127,9 @@ note:  Heritiera_fomes_filtered.csv is generated including both Heritiera_fomes_
 
 [1] Oksanen, J., Blanchet, F. G., Kindt, R., Legendre, P., Minchin, P. R., O’hara, R. B., ... & Oksanen, M. J. (2013). Package ‘vegan’. Community ecology package, version, 2(9), 1-295.
 
-[2]Hahsler, M., Buchta, C., Gruen, B., Hornik, K., & Hahsler, M. M. (2022). Package ‘arules’.
+[2] Hahsler, M., Buchta, C., Gruen, B., Hornik, K., & Hahsler, M. M. (2022). Package ‘arules’.
 
-[3]Tollefson, M., & Tollefson, M. (2021). Graphics with the ggplot2 Package: An Introduction. Visualizing Data in R 4: Graphics Using the base, graphics, stats, and ggplot2 Packages, 281-293.
+[3] Tollefson, M., & Tollefson, M. (2021). Graphics with the ggplot2 Package: An Introduction. Visualizing Data in R 4: Graphics Using the base, graphics, stats, and ggplot2 Packages, 281-293.
 
 [4] Hahsler, M. (2017). arulesViz: Interactive visualization of association rules with R. R J., 9(2), 163.
 
