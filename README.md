@@ -85,13 +85,14 @@ To perform association rule filtering the following steps are required:
 8. This script also includes statistical validation applying Bonferroni correction and Benjamini Hochberg adjustment for each rule.
 
 
-• **Output file: Heritiera_fomes_filtered.csv**[Sample output for the generated association rule for Heritiera fomes]] 
+• **Output file: Heritiera_fomes_filtered.csv**[Sample output for the generated association rule for _Heritiera fomes_]
+
 note:  Heritiera_fomes_filtered.csv is generated including both Heritiera_fomes_Bonferroni.csv and Heritiera_fomes_Benjamini.csv. Similarly, for other species under study, respective filtered files could be generated.
 
 |Antecedent|Consequent|
 |---------------------------------------------|--------------|
-|{Aegialitis rotundifolia,Kandelia candel} =>| {_Heritiera fomes_}|
-|{Aegialitis rotundifolia,Ceriops decandra} =>| {_Heritiera fomes_}|
+|{_Aegialitis rotundifolia,Kandelia candel_} =>| {_Heritiera fomes_}|
+|{_Aegialitis rotundifolia,Ceriops decandra_} =>| {_Heritiera fomes_}|
 
 #### Step 2: Filtering by subjective measures
 
