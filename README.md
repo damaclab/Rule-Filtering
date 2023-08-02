@@ -21,21 +21,21 @@ By following these instructions, you will be able to identify meaningful associa
 
 ## Prerequisites
 
-Before using this code, ensure that you have the following prerequisites installed:
-•	R: You can download and install R from the official website: https://www.r-project.org/
+Before using this code, ensure that the following prerequisites are installed:
+•	R: It can be downloaded and installed from the official website: https://www.r-project.org/
 
-•	RStudio: RStudio is an integrated development environment (IDE) for R. It provides a user-friendly interface and additional tools for R programming. You can download and install RStudio from the official website: https://www.rstudio.com/
+•	RStudio: RStudio is an integrated development environment (IDE) for R. It provides a user-friendly interface and additional tools for R programming. RStudio can be downloaded and installed from the official website: https://www.rstudio.com/.
 
 •	Jupyter notebook: Jupyter notebook is an open-source IDE that supports Python. 
-To install it from Anaconda distribution, visit the Anaconda website (https://www.anaconda.com/products/individual) and download the Anaconda distribution appropriate for your operating system (Windows, macOS, or Linux). Then install Jupyter notebook.
+To install it from Anaconda distribution, visit the Anaconda website (https://www.anaconda.com/products/individual) and download the Anaconda distribution appropriate for the respective operating system (Windows, macOS, or Linux). Then install Jupyter notebook.
 
 
 ## Installation
 
 To use this code, follow these steps:
-1.	Clone this repository to your local machine or download the ZIP file and extract it.
+1.	Clone this repository to a local machine or download the ZIP file and extract it.
 2.	Open the R environment or RStudio.
-3.	Set the working directory to the location where you cloned or extracted the repository.
+3.	Set the working directory to the location where it is cloned or extracted the repository.
 4.	Install the required R packages by running the following command in the R console: For e.g.
 
 |install.packages(c("arules", "arulesViz"))|
@@ -43,19 +43,19 @@ To use this code, follow these steps:
 
 
 ## Data Preparation
-Before performing association rule filtering, you need to prepare your species occurrence and taxonomic datasets. Follow these steps to prepare your data:
-1.	Species Occurrence Dataset: Prepare your species occurrence dataset in CSV format. The dataset should have columns representing species and occurrence locations. Each row should correspond to a single occurrence record.
-2.	Taxonomic Dataset: Prepare your taxonomic dataset in CSV format. The dataset should contain information about the taxonomic hierarchy of the species in your occurrence dataset. It should include columns such as Species ID, Kingdom, Phylum, Class, Order, Family, Genus, and Species.
-Note: The taxonomic dataset should cover all the species present in your occurrence dataset.
+Two requied datasets are:
+1.	Species Occurrence Dataset: It is given in EstuaryVsSpecies.CSV.
+Each entry is containing region number and the respective species found at that region. 
+2.	Taxonomic Dataset: The taxonomic details of Indian mangroves are given in mangrove_taxonomy.csv
+ It should includes columns such as Species ID, Kingdom, Phylum, Class, Order, Family, Genus, and Species.
+Note: The taxonomic dataset covers all the species present in the occurrence dataset.
 
- The two datasets used in this analysis are given in the supplementary material (Please refer to the Table 11 and Table 13)
  The Dataset Description is given below: 
 
 |Description| Dimension| Rows| Columns| 
 |-----------|-------|--------|--------|
 |Indian mangroves occurrence data| 34 x 19| 34 Indian mangroves | 19 estuaries along the east and west coasts|
 |Taxonomic details for the mangroves in India |34 x 7| 34 Indian mangroves | Unique identifier (WoRMS ID or ITIS TSN or GBIF taxon id ), and taxonomic hierarchy|
-
 
 Note: Input datasets require minimum alteration for feeding to the R-environment:
 
