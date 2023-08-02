@@ -1,5 +1,6 @@
 # Rule Filtering on Biodiversity Data
 This repository contains code and instructions for performing association rule filtering on a species occurrence dataset using R.
+
 ## Table of Contents
 
 - [Introduction](#Introduction)
@@ -51,18 +52,15 @@ Each entry is containing region number and the respective species found at that 
 Note: The taxonomic dataset covers all the species present in the occurrence dataset.
 
 
-_Sample input dataset of Indian Mangrove occurrence data: EstuaryVsSpecies.CSV_
+_The first two rows of EstuaryVsSpecies.CSV are shown below:_
 
-The first two rows are given among a total of 19 rows:
-[Each row corresponds to an estuarine region and contains the list of species found in that region long the columns]
 | Region number |  Species 1    | Species 2  | Species 3 | Species 4 | Species 5 | Species 6|
 | ------------- | ------------- |------------|-----------|-----------|-----------|----------|
 | 1  | _Brownlowia tersa_  |  _Kandelia candel_  |_Scyphiphora hydrophyllacea_|_Xylocarpus granatum_|_Phoenix paludosa_|_Nypa fruticans_|
 | 2 |_Avicennia marina_|	_Rhizophora apiculata_ |	_Rhizophorata mucronata_ |             
 
 
-_Sample input dataset of taxonomic details of Indian Mangrove: mangrove_taxonomy.csv_
-The first two rows are given among a total of 34 rows:
+_The first two rows of  mangrove_taxonomy.csv are shown below:_
 |Mangrove|	Genus	|Family|	Order|	Superorder|	Class	|
 |--------|--------|------|-------|------------|-------|
 |_Acanthus ilicifolius_| Linnaeus|	Acanthus|	Acanthaceae	|Lamiales|	Asteranae| 	Magnoliopsida|
@@ -73,20 +71,17 @@ The first two rows are given among a total of 34 rows:
 
 ## Association Rule Filtering
 
-To perform association rule filtering on your species occurrence, follow these steps:
+To perform association rule filtering the following steps are required:
 
 #### Step1: Filtering by objective measures and statistical validation
-Each row corresponds to an estuary and contains the list of species found
-1.	Open the objective_measure.R  file in your preferred R environment.
+
+1.	Open the objective_measure.R  file in R environment.
 2.	**Input dataset: EstuaryVsSpecies.CSV** 
 3.	Modify the code to specify the input file path. Include the name of the focal species to be studied. Update any other parameters or settings according to your requirements.
-4.	Run the script in your R environment.
+4.	Run the script in R environment.
 5.	The script will read the species occurrence datasets, preprocess the data, generate association rules, and perform filtering based on the specified parameters.
-
 6.	The filtered association rules will be displayed in the R console, showing the antecedent (left-hand side), consequent (right-hand side), support, confidence, and other relevant metrics for each rule.
-
-7.	The script generates visualization for the filtered association rules to gain insights into the co-occurrence patterns and taxonomic relationships of different species in your datasets.
-
+7.	The script generates visualization for the filtered association rules to gain insights into the co-occurrence patterns and taxonomic relationships of different species in  datasets.
 8. This script also includes statistical validation applying Bonferroni correction and Benjamini Hochberg adjustment for each rule.
 
 
@@ -101,7 +96,7 @@ The script will generate the following output:
 
 1.	Open the subjective_measure.R  file in your preferred R environment.
 2.**Input dataset: mangrove_taxonomy.csv**
-3.	Run the script in your R environment.
+3.	Run the script in R environment.
 4.	The script will generate taxonomic distinctness between two individuals using R function _taxa2dist() from R package (vegan: Community Ecology Package)_ and stored in  **taxdis.csv**.
 6.	Finally, the **total_taxonomic_distinctness.py** file generates the total taxonomic distinctness for each rule, provided that we have taxdis.csv (taxdis.csv is generated from subjective_measure.R) and Heritiera_fomes_filtered.csv (Heritiera_fomes_filtered.csv is generated from objective_measure.R). 
 
