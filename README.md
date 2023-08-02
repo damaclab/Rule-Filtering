@@ -90,7 +90,10 @@ The script will generate the following output:
 
 • **Output file: Heritiera_fomes_filtered.csv** is generated including both Heritiera_fomes_Bonferroni.csv and Heritiera_fomes_Benjamini.csv. Similarly, for other species under study, respective filtered files could be generated.
 
-
+|Antecedent|Consequent|
+|---------------------------------------------|--------------|
+|{Aegialitis rotundifolia,Kandelia candel} =>| {Heritiera fomes}|
+|{Aegialitis rotundifolia,Ceriops decandra} =>| {Heritiera fomes}|
 
 #### Step 2: Filtering by subjective measures
 
@@ -111,8 +114,12 @@ The script will generate the following output:
 |_Nypa fruticans_|73|73|73|73|0|
 
 **Output file: taxdis_op_heritiera.csv** [Sample output for the total taxonomic distinctness for frequently occurred species associations for Heritiera fomes]
- 
-_Aegialitis rotundifolia, Kandelia candel, Heritiera fomes_ = 219 
+
+
+
+ |Species association|Total taxonomic distinctness|
+ |-------------------------------------------------------------|-----|
+|_Aegialitis rotundifolia, Kandelia candel, Heritiera fomes_ | 219 |
 
 
 **The sample output files for Heritiera fomes are attached in the folder named sample output.**
