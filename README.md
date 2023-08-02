@@ -100,9 +100,7 @@ The script will generate the following output:
 4.	The script will generate taxonomic distinctness between two individuals using R function _taxa2dist() from R package (vegan: Community Ecology Package)_ and stored in  **taxdis.csv**.
 6.	Finally, the **total_taxonomic_distinctness.py** file generates the total taxonomic distinctness for each rule, provided that we have taxdis.csv (taxdis.csv is generated from subjective_measure.R) and Heritiera_fomes_filtered.csv (Heritiera_fomes_filtered.csv is generated from objective_measure.R). 
 
-Output: **taxdis.csv**
-
-Sample output for the generated taxonomic distinctness between any two species:
+**Output file: taxdis.csv** [Sample output for the generated taxonomic distinctness between any two species]
 
  |Species|_Acanthus ilicifolius_|_Avicennia alba_|_Avicennia marina_|_Avicennia officinalis_|_Nypa fruticans_|
 |------------|-----------------|--------------|--------------------|-----------------------|------------------|
@@ -112,9 +110,7 @@ Sample output for the generated taxonomic distinctness between any two species:
 |_Avicennia officinalis_|21|17|17|0|
 |_Nypa fruticans_|73|73|73|73|0|
 
-Output: **taxdis_op_heritiera.csv**
-
-Sample output for the total taxonomic distinctness for frequently occurred species associations for Heritiera fomes::
+**Output file: taxdis_op_heritiera.csv** [Sample output for the total taxonomic distinctness for frequently occurred species associations for Heritiera fomes]
  
 _Aegialitis rotundifolia, Kandelia candel, Heritiera fomes_ = 219 
 
