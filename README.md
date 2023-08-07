@@ -88,7 +88,7 @@ To perform association rule filtering the following steps are required:
 8. This script also includes statistical validation applying Bonferroni correction and Benjamini Hochberg adjustment for each rule.
 
 
-• **Output file: Heritiera_fomes_filtered.csv**[Sample output for the generated association rule for _Heritiera fomes_]
+• **Output file: Heritiera_fomes_filtered.csv**[A portion of the output for the generated association rule for _Heritiera fomes_ is shown below:]
 
 note:  Heritiera_fomes_filtered.csv is generated including both Heritiera_fomes_Bonferroni.csv and Heritiera_fomes_Benjamini.csv. Similarly, for other species under study, respective filtered files could be generated.
 
@@ -105,7 +105,7 @@ note:  Heritiera_fomes_filtered.csv is generated including both Heritiera_fomes_
 4.	The script will generate taxonomic distinctness between two individuals using R function _taxa2dist() from R package (vegan: Community Ecology Package)_ and stored in  **taxdis.csv**.
 6.	Finally, the **total_taxonomic_distinctness.py** file generates the total taxonomic distinctness for each rule, provided that we have taxdis.csv (taxdis.csv is generated from subjective_measure.R) and Heritiera_fomes_filtered.csv (Heritiera_fomes_filtered.csv is generated from objective_measure.R). 
 
-**Output file: taxdis.csv** [Sample output for the generated taxonomic distinctness between any two species]
+**Output file: taxdis.csv** [A portion of the output for the generated taxonomic distinctness between any two species is shown below:]
 
  |Species|_Acanthus ilicifolius_|_Avicennia alba_|_Avicennia marina_|_Avicennia officinalis_|_Nypa fruticans_|
 |------------|-----------------|--------------|--------------------|-----------------------|------------------|
@@ -115,7 +115,7 @@ note:  Heritiera_fomes_filtered.csv is generated including both Heritiera_fomes_
 |_**Avicennia officinalis**_|21|17|17|0|
 |_**Nypa fruticans**_|73|73|73|73|0|
 
-**Output file: taxdis_op_heritiera.csv** [Sample output for the total taxonomic distinctness for frequently occurred species associations for Heritiera fomes]
+**Output file: taxdis_op_heritiera.csv** [A portion of the output for the total taxonomic distinctness for frequently occurred species associations for _Heritiera fomes_ is shown below]
 
 
 
