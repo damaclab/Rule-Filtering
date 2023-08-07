@@ -109,11 +109,11 @@ note:  Heritiera_fomes_filtered.csv is generated including both Heritiera_fomes_
 
  |Species|_Acanthus ilicifolius_|_Avicennia alba_|_Avicennia marina_|_Avicennia officinalis_|_Nypa fruticans_|
 |------------|-----------------|--------------|--------------------|-----------------------|------------------|
-|_Acanthus ilicifolius_|0 |	     
-|_Avicennia alba_|21|0|
-|_Avicennia marina_|21|17|0|
-|_Avicennia officinalis_|21|17|17|0|
-|_Nypa fruticans_|73|73|73|73|0|
+|_**Acanthus ilicifolius**_|0 |	     
+|_**Avicennia alba**_|21|0|
+|_**Avicennia marina**_|21|17|0|
+|_**Avicennia officinalis**_|21|17|17|0|
+|_**Nypa fruticans**_|73|73|73|73|0|
 
 **Output file: taxdis_op_heritiera.csv** [Sample output for the total taxonomic distinctness for frequently occurred species associations for Heritiera fomes]
 
