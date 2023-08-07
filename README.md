@@ -46,7 +46,7 @@ To use this code, follow these steps:
 | :- |
 
 
-## Data Preparation
+## Data Description
 Two required datasets are:
 1.	Species Occurrence Dataset: It is given in EstuaryVsSpecies.CSV.
 Each entry contains the region number and the respective species found at that region. 
