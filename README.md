@@ -124,7 +124,7 @@ note:  Heritiera_fomes_filtered.csv is generated including both Heritiera_fomes_
 |_Aegialitis rotundifolia, Kandelia candel, Heritiera fomes_ | 219 |
 
 
-**The sample output files for Heritiera fomes are attached in the folder named sample output.**
+**The sample output files for _Heritiera fomes_ are attached in the folder named sample output.**
 
 ## References
 
