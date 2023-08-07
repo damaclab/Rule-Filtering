@@ -6,7 +6,7 @@ Authors: Moumita Ghosh, Sourav Mondal, Rohmatul Fajriyah, Kartick Chandra Mondal
 ## Table of Contents
 
 - [Introduction](#Introduction)
-- [Prerequisites](#Prerequisites)
+- [System Prerequisites](#Prerequisites)
 - [Installation](#Installation)
 - [Data Description](#DataDescription)
 - [Association Rule Filtering](#AssociationRuleFiltering)
@@ -22,9 +22,9 @@ Taxonomic distinctness is a measure that quantifies the uniqueness or distinctiv
 
 By following these instructions, you will be able to identify meaningful associations between species that can provide valuable insights into their ecological relationships. The procedure can be applied to any other species dataset along with their taxonomic details.
 
-## Prerequisites
+## System Prerequisites
 
-Before using this code, ensure that the following prerequisites are installed:
+Before using this code, ensure that the following prerequisites are need be installed:
 
 •	R: It can be downloaded and installed from the official website: https://www.r-project.org/
 
