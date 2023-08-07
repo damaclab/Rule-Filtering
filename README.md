@@ -1,4 +1,4 @@
-# Rule Filtering on Biodiversity Data
+# Data-Driven Rule Filtering on Biodiversity Data
 This repository contains code and instructions for performing association rule filtering on a species occurrence dataset using R.
 
 ## Table of Contents
@@ -14,11 +14,11 @@ This repository contains code and instructions for performing association rule f
 ## Introduction
 Association rule filtering is a technique used to discover relationships and patterns within datasets. In the context of species occurrence, association rule filtering can reveal associations between different species based on their co-occurrence.
 This manual guides you through the process of performing association rule filtering in R using species occurrence.
-As association rule generates huge number of rules, statistical validation is necessary to identify statistically validated rules. Also, adaptation of domain knowledge can generate most useful set of ecologically significant association rules. We adapt the idea of taxonomic distinctness here.
+As the association rule generates a huge number of rules, statistical validation is necessary to identify statistically validated rules. Also, adaptation of domain knowledge can generate the most useful set of ecologically significant association rules. We adapt the idea of taxonomic distinctness here.
   
 Taxonomic distinctness is a measure that quantifies the uniqueness or distinctiveness of a given set of species based on their taxonomic hierarchy. It assesses how different the species are from each other in terms of their taxonomic classification. It takes into account the taxonomic ranks (e.g., Kingdom, Phylum, Class, Order, etc.) and their hierarchical relationships.
 
-By following these instructions, you will be able to identify meaningful associations between species that can provide valuable insights into their ecological relationships. The procedure can be applied on any other species dataset along with their taxonomic details.
+By following these instructions, you will be able to identify meaningful associations between species that can provide valuable insights into their ecological relationships. The procedure can be applied to any other species dataset along with their taxonomic details.
 
 ## Prerequisites
 
@@ -27,8 +27,8 @@ Before using this code, ensure that the following prerequisites are installed:
 
 •	RStudio: RStudio is an integrated development environment (IDE) for R. It provides a user-friendly interface and additional tools for R programming. RStudio can be downloaded and installed from the official website: https://www.rstudio.com/.
 
-•	Jupyter notebook: Jupyter notebook is an open-source IDE that supports Python. 
-To install it from Anaconda distribution, visit the Anaconda website (https://www.anaconda.com/products/individual) and download the Anaconda distribution appropriate for the respective operating system (Windows, macOS, or Linux). Then install Jupyter notebook.
+•	Jupyter Notebook: Jupyter Notebook is an open-source IDE that supports Python. 
+To install it from Anaconda distribution, visit the Anaconda website (https://www.anaconda.com/products/individual) and download the Anaconda distribution appropriate for the respective operating system (Windows, macOS, or Linux). Then install Jupyter Notebook.
 
 
 ## Installation
@@ -44,11 +44,11 @@ To use this code, follow these steps:
 
 
 ## Data Preparation
-Two requied datasets are:
+Two required datasets are:
 1.	Species Occurrence Dataset: It is given in EstuaryVsSpecies.CSV.
-Each entry is containing region number and the respective species found at that region. 
+Each entry contains the region number and the respective species found at that region. 
 2.	Taxonomic Dataset: The taxonomic details of Indian mangroves are given in mangrove_taxonomy.csv
- It should includes columns such as Species ID, Kingdom, Phylum, Class, Order, Family, Genus, and Species.
+ It should include columns such as Species ID, Kingdom, Phylum, Class, Order, Family, Genus, and Species.
 Note: The taxonomic dataset covers all the species present in the occurrence dataset.
 
 
@@ -75,10 +75,10 @@ To perform association rule filtering the following steps are required:
 
 #### Step1: Filtering by objective measures and statistical validation
 
-1.	Open the objective_measure.R  file in R environment.
+1.	Open the objective_measure.R  file in the R environment.
 2.	**Input dataset: EstuaryVsSpecies.CSV** 
 3.	Modify the code to specify the input file path. Include the name of the focal species to be studied (In this file we consider _Heritiera fomes_) . Update any other parameters or settings according to your requirements.
-4.	Run the script in R environment.
+4.	Run the script in the R environment.
 5.	The script will read the species occurrence datasets, preprocess the data, generate association rules, and perform filtering based on the specified parameters.
 6.	The filtered association rules will be displayed in the R console, showing the antecedent (left-hand side), consequent (right-hand side), support, confidence, and other relevant metrics for each rule.
 7.	The script generates visualization for the filtered association rules to gain insights into the co-occurrence patterns and taxonomic relationships of different species in  datasets.
@@ -96,7 +96,7 @@ note:  Heritiera_fomes_filtered.csv is generated including both Heritiera_fomes_
 
 #### Step 2: Filtering by subjective measures
 
-1.	Open the subjective_measure.R file in R environment.
+1.	Open the subjective_measure.R file in the    R environment.
 2.  **Input dataset: mangrove_taxonomy.csv**
 3.	Run the script in R environment.
 4.	The script will generate taxonomic distinctness between two individuals using R function _taxa2dist() from R package (vegan: Community Ecology Package)_ and stored in  **taxdis.csv**.
