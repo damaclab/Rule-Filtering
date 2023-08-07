@@ -24,7 +24,7 @@ By following these instructions, you will be able to identify meaningful associa
 
 ## System Prerequisites
 
-Before using this code, ensure that the following prerequisites are need be installed:
+Before using this code, ensure that the following prerequisites are needed to be installed:
 
 •	R: It can be downloaded and installed from the official website: https://www.r-project.org/
 
@@ -39,7 +39,7 @@ To install it from Anaconda distribution, visit the Anaconda website (https://ww
 To use this code, follow these steps:
 1.	Clone this repository to a local machine or download the ZIP file and extract it.
 2.	Open the R environment or RStudio.
-3.	Set the working directory to the location where it is cloned or extracted the repository.
+3.	Set the working directory to the location where it is cloned or extracted from   the repository.
 4.	Install the required R packages by running the following command in the R console: For e.g.
 
 |install.packages(c("arules", "arulesViz"))|
@@ -49,8 +49,8 @@ To use this code, follow these steps:
 ## Data Description
 Two required datasets are:
 1.	Species Occurrence Dataset: It is given in EstuaryVsSpecies.CSV.
-Each entry contains the region number and the respective species found at that region. 
-2.	Taxonomic Dataset: The taxonomic details of Indian mangroves are given in mangrove_taxonomy.csv
+Each entry contains the region number and the respective species found in that region. 
+2.	Taxonomic Dataset: The taxonomic details of Indian mangroves are given in mangrove_taxonomy.csv.
  It should include columns such as Species ID, Kingdom, Phylum, Class, Order, Family, Genus, and Species.
 Note: The taxonomic dataset covers all the species present in the occurrence dataset.
 
