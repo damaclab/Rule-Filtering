@@ -8,7 +8,7 @@ Authors: Moumita Ghosh, Sourav Mondal, Rohmatul Fajriyah, Kartick Chandra Mondal
 - [Introduction](#Introduction)
 - [Prerequisites](#Prerequisites)
 - [Installation](#Installation)
-- [Data Description](#DataPreration)
+- [Data Description](#DataDescription)
 - [Association Rule Filtering](#AssociationRuleFiltering)
 - [References](#References)
 
