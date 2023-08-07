@@ -25,6 +25,7 @@ By following these instructions, you will be able to identify meaningful associa
 ## Prerequisites
 
 Before using this code, ensure that the following prerequisites are installed:
+
 •	R: It can be downloaded and installed from the official website: https://www.r-project.org/
 
 •	RStudio: RStudio is an integrated development environment (IDE) for R. It provides a user-friendly interface and additional tools for R programming. RStudio can be downloaded and installed from the official website: https://www.rstudio.com/.
