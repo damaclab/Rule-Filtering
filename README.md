@@ -1,5 +1,6 @@
 # Data-Driven Rule Filtering on Biodiversity Data
-This repository contains code and instructions for performing association rule filtering on a species occurrence dataset using R.\\
+This repository contains code and instructions for performing association rule filtering on a species occurrence dataset using R. 
+
 Authors: Moumita Ghosh, Sourav Mondal, Rohmatul Fajriyah, Kartick Chandra Mondal, Anirban Roy
 
 ## Table of Contents
